@@ -1,14 +1,54 @@
-import { useState } from 'react'
-import './App.css'
+import { useState } from "react";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const [color, setColor] = useState("olive");
   return (
-    <>
-
-    </>
-  )
+    <div
+      className="w-full h-screen duration-100"
+      style={{ backgroundColor: color}}
+    >
+      <div className="fixed flex flex-wrap justify-center bottom-7 inset-x-0 px-2">
+        <div className="flex flex-wrap justify-center gap-3 shadow-lg bg-white  px-3 py-2 rounded">
+          <button
+          onClick={() =>setColor("red")}
+            className="outline-none px-5 py-2 rounded text-white shadow-2xl"
+            style={{ backgroundColor: "red" }}
+          >
+            Red
+          </button>
+          <button
+            onClick={() =>setColor("green")}
+            className="outline-none px-5 py-2 rounded text-white shadow-2xl"
+            style={{ backgroundColor: "green" }}
+          >
+            Green
+          </button>
+          <button
+            onClick={() =>setColor("blue")}
+            className="outline-none px-5 py-2 rounded text-white shadow-2xl"
+            style={{ backgroundColor: "blue" }}
+          >
+            Blue
+          </button>
+          <button
+            onClick={() =>setColor("purple")}
+            className="outline-none px-5 py-2 rounded text-white shadow-2xl"
+            style={{ backgroundColor: "purple" }}
+          >
+            purple
+          </button>
+          <button
+            onClick={() =>setColor("gray")}
+            className="outline-none px-5 py-2 rounded text-white shadow-2xl"
+            style={{ backgroundColor: "gray" }}
+          >
+            gray
+          </button>
+        </div>
+      </div>
+    </div>
+  );
 }
 
-export default App
+export default App;
