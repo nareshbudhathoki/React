@@ -16,12 +16,14 @@ This is a React project that demonstrates [brief description of what the app doe
 ## Installation
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/nareshbudhathoki/React.git
    cd React
    ```
 
 2. Install dependencies:
+
    ```bash
    npm install
    ```
@@ -29,6 +31,7 @@ This is a React project that demonstrates [brief description of what the app doe
 ## Usage
 
 To start the development server:
+
 ```bash
 npm start
 ```
@@ -36,11 +39,13 @@ npm start
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 To build for production:
+
 ```bash
 npm run build
 ```
 
 To run tests:
+
 ```bash
 npm test
 ```
