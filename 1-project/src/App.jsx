@@ -1,14 +1,20 @@
-import { useState } from 'react'
 import './App.css'
+import Card from './components/Card.jsx'
+import Navbar from './components/Navbar.jsx'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+function App(){
+  let obj = {
+    username: "ken",
+    age:33
+  }
+  
   return (
     <>
-    <h1 className='text-green-500'>Welcome to the Billionare Club</h1>
+    <Card username="Billionare Club" someobj = {obj}></Card>
+    <Card username={"Welcome to one Percent Club"}></Card>
     </>
   )
 }
+
 
 export default App
